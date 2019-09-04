@@ -1,6 +1,6 @@
 # Gosal (sal-client)
 
-*Gosal is an alpha project, and should not be considered for production use at this time.  There is no support, pull requests accepted :)*
+_Gosal is an alpha project, and should not be considered for production use at this time. There is no support, pull requests accepted :)_
 
 ## Overview
 
@@ -20,21 +20,21 @@ Your configuration file should be `json` formatted as follows:
     "command": "facts"
   }
 }
-
 ```
+
 # Running gosal
+
 Gosal requires the configuration file to be passed in as an argument like so...
 
 #### Windows Example
-`gosal.exe --config "C:\path\to\config.json"`
 
+`gosal.exe --config "C:\path\to\config.json"`
 
 # Building
 
 To build the project after cloning:
 
-```
-make deps
+```shell
 make build
 ```
 
@@ -48,6 +48,7 @@ After adding a new dependency, run `dep ensure -update`, which will update the G
 ## Formatting your code
 
 Go has an exceptional formatter - please use it!
+
 ```
 gofmt -s -w *.go
 gofmt -s -w ./*/*.go

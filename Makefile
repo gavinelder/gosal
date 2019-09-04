@@ -48,7 +48,7 @@ define HELP_TEXT
 
   Makefile commands
 
-	make deps         - Install dependent programs and libraries
+	make mod          - Install dependent programs and libraries
 	make clean        - Delete all build artifacts
 
 	make build        - Build the code
@@ -61,10 +61,8 @@ endef
 help:
 	$(info $(HELP_TEXT))
 
-deps:
-	go get -u github.com/golang/dep/...
-	go get -u github.com/golang/lint/golint
-	dep ensure -vendor-only -v
+mod:
+	go mod tidy
 
 clean:
 	rm -rf build/
