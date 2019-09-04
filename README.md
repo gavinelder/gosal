@@ -42,7 +42,7 @@ New macOS and windows binaries will be added to the `build/` directory.
 
 ## Dependencies
 
-Gosal uses [dep](https://github.com/golang/dep#current-status) to manage external dependencies. Run `make deps` to install/update the required dependencies.
+Gosal uses [go mod](https://github.com/golang/dep#current-status) to manage external dependencies. Run `make deps` to install/update the required dependencies.
 After adding a new dependency, run `dep ensure -update`, which will update the Gopkg.lock file. See [Adding a dependency](https://github.com/golang/dep#adding-a-dependency) for more.
 
 ## Formatting your code
